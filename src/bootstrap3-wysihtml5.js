@@ -30,6 +30,15 @@
                 "</div>" +
                 "</li>";
         },
+        
+        "paragraph": function(locale, options) {
+            var size = (options && options.size) ? ' btn-'+options.size : '';
+            return "<li>" +
+                "<div class='btn-group'>" +
+                "<a class='btn " + size + " btn-default' data-wysihtml5-command='paragraph' title='CTRL+P' tabindex='-1'>" + locale.paragraph.paragraph + "</a>" +
+                "</div>" +
+                "</li>";
+        },
 
         "lists": function(locale, options) {
             var size = (options && options.size) ? ' btn-'+options.size : '';
@@ -397,6 +406,7 @@
         "font-styles": true,
         "color": false,
         "emphasis": true,
+        "paragraph": false,
         "lists": true,
         "html": false,
         "link": true,
@@ -436,6 +446,7 @@
                 "h4": {},
                 "h5": {},
                 "h6": {},
+                "p": {},
                 "blockquote": {},
                 "u": 1,
                 "img": {
@@ -483,6 +494,9 @@
                 bold: "Bold",
                 italic: "Italic",
                 underline: "Underline"
+            },
+            paragraph: {
+                paragraph: "¶"  
             },
             lists: {
                 unordered: "Unordered list",
