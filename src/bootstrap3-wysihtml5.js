@@ -45,7 +45,6 @@
             return "<li>" +
                 "<div class='btn-group'>" +
                 "<a class='btn " + size + " btn-default' data-wysihtml5-command='table' title='CTRL+P' tabindex='-1'>" + locale.table.table + "</a>" +
-                "<a class='btn " + size + " btn-default' data-wysihtml5-command='tablerow' title='CTRL+P' tabindex='-1'>" + locale.table.row + "</a>" +
                 "<a class='btn " + size + " btn-default' data-wysihtml5-command='tabledata' title='CTRL+P' tabindex='-1'>" + locale.table.data + "</a>" +
                 "</div>" +
                 "</li>";
@@ -512,7 +511,6 @@
             },
 			table: {
 				table: "Table",
-				row: "Row",
 				data: "Data",
 			},
             lists: {
